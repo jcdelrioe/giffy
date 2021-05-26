@@ -24,7 +24,10 @@ export default function App() {
 						</Link>
 						<GifsContextProvider>
 							<Route component={HomePage} path="/" />
-							<Route component={SearchResults} path="/search/:keyword" />
+							<Route
+								component={SearchResults}
+								path="/search/:keyword/:rating?"
+							/>
 							<Route component={Detail} path="/gif/:id" />
 							<Route component={() => <h1>404 Error :(</h1>} path="/404" />
 						</GifsContextProvider>
