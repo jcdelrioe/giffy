@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import ListOfGifs from "components/ListOfGifs";
 import { useGifs } from "hooks/useGifs";
 import TrendingSearches from "components/TrendingSearches";
