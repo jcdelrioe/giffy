@@ -2,10 +2,12 @@ import React, { Suspense } from "react";
 import { Link, Route, Switch } from "wouter";
 
 import Header from "components/Header";
+
 import SearchResults from "pages/SearchResults";
 import Detail from "pages/Detail";
 import ErrorPage from "pages/ErrorPage";
 import Login from "pages/Login";
+import Register from "pages/Register";
 
 import { UserContextProvider } from "context/UserContext";
 import { GifsContextProvider } from "context/GifsContext";
@@ -35,6 +37,7 @@ export default function App() {
 								/>
 								<Route component={Detail} path="/gif/:id" />
 								<Route component={Login} path="/login" />
+								<Route component={Register} path="/register" />
 								<Route component={ErrorPage} path="/:rest*" />
 							</Switch>
 						</GifsContextProvider>
