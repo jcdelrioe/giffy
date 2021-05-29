@@ -4,8 +4,10 @@ import Login from "components/Login";
 export default function LoginPage() {
 	return (
 		<>
-			<h2>Login</h2>
-			<Login />;
+			<div className='form-container'>
+				<h2>Login</h2>
+				<Login />
+			</div>
 		</>
 	);
 }
